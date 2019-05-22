@@ -1,0 +1,6 @@
+app_identifier("com.Angel-Avila.Rover") # The bundle identifier of your app
+apple_id("aangel.aac96@gmail.com") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

@@ -1,0 +1,44 @@
+PODS:
+  - CoreStore (6.3.1)
+  - IQKeyboardManagerSwift (6.3.0)
+  - PinLayout (1.8.7)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxOptional (4.0.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - CoreStore
+  - IQKeyboardManagerSwift
+  - PinLayout
+  - RxCocoa
+  - RxOptional
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CoreStore
+    - IQKeyboardManagerSwift
+    - PinLayout
+    - RxCocoa
+    - RxOptional
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  CoreStore: 1ce7b77a95f0939d90b2d1e04e66a4a5bc1614d7
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  PinLayout: a0722a5c8f0e0168a9c091ffe4930dabf0c8582c
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: 0fc33c0bd45b5cdcf56115b72145170b25a244a1
+
+COCOAPODS: 1.7.0.beta.2

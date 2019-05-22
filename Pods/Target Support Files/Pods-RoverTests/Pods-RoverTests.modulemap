@@ -1,0 +1,6 @@
+framework module Pods_RoverTests {
+  umbrella header "Pods-RoverTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
