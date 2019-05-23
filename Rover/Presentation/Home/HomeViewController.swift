@@ -113,6 +113,8 @@ class HomeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        presentOnRoot(with: DogDetailViewController(dog: items[indexPath].asDogViewViewModel()))
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -180,5 +182,13 @@ extension HomeViewController: ListObjectObserver {
     func listMonitor(_ monitor: ListMonitor<Dog>, didMoveObject object: Dog, fromIndexPath: IndexPath, toIndexPath: IndexPath) {
         self.tableView.deleteRows(at: [fromIndexPath], with: .automatic)
         self.tableView.insertRows(at: [toIndexPath], with: .automatic)
+    }
+}
+
+extension UIViewController {
+    func presentOnRoot(with viewController: UIViewController){
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        self.present(navigationController, animated: true, completion: nil)
     }
 }

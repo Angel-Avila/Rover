@@ -16,11 +16,15 @@ extension UIViewController {
         
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
-        navigationBar?.prefersLargeTitles = false
+        if #available(iOS 11.0, *) {
+            navigationBar?.prefersLargeTitles = false
+        }
         navigationBar?.tintColor = .white
         navigationBar?.barTintColor = .roverGreen
         navigationBar?.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationBar?.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        if #available(iOS 11.0, *) {
+            navigationBar?.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        }
         navigationBar?.layer.shadowColor = UIColor.black.cgColor
         navigationBar?.layer.shadowOffset = CGSize(width: 0, height: 1)
         navigationBar?.layer.masksToBounds = false

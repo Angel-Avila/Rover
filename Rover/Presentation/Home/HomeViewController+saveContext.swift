@@ -50,8 +50,6 @@ extension HomeViewController {
             print("Saving:", created.name.value)
             
         }, completion: { _ in })
-        
-        
     }
     
     func deleteAll() {

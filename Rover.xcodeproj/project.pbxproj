@@ -10,6 +10,9 @@
 		0B5A45CC2295FABE00432AED /* HomeViewController+saveContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */; };
 		0B7762042295E6B500088725 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762032295E6B500088725 /* HomePresenter.swift */; };
 		0B7762072295E80C00088725 /* DogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762062295E80C00088725 /* DogProvider.swift */; };
+		0BB6B60E22970DE30038BDB1 /* DogPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B60D22970DE30038BDB1 /* DogPopup.swift */; };
+		0BB6B61122970F440038BDB1 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B61022970F440038BDB1 /* DogDetailViewController.swift */; };
+		0BB6B61322970F950038BDB1 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B61222970F950038BDB1 /* DogDetailView.swift */; };
 		0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825CB229464850092A7FB /* AppDelegate.swift */; };
 		0BC825D4229464850092A7FB /* Rover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825D2229464850092A7FB /* Rover.xcdatamodeld */; };
 		0BC825D6229464870092A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC825D5229464870092A7FB /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+saveContext.swift"; sourceTree = "<group>"; };
 		0B7762032295E6B500088725 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		0B7762062295E80C00088725 /* DogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProvider.swift; sourceTree = "<group>"; };
+		0BB6B60D22970DE30038BDB1 /* DogPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPopup.swift; sourceTree = "<group>"; };
+		0BB6B61022970F440038BDB1 /* DogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewController.swift; sourceTree = "<group>"; };
+		0BB6B61222970F950038BDB1 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
 		0BC825C8229464850092A7FB /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC825CB229464850092A7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC825D3229464850092A7FB /* Rover.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rover.xcdatamodel; sourceTree = "<group>"; };
@@ -100,6 +106,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		0BB6B60F22970F230038BDB1 /* DogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0BB6B61222970F950038BDB1 /* DogDetailView.swift */,
+				0BB6B61022970F440038BDB1 /* DogDetailViewController.swift */,
+			);
+			path = DogDetail;
+			sourceTree = "<group>";
+		};
 		0BC825BF229464850092A7FB = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,7 @@
 				0BC825F1229465880092A7FB /* ControllerView.swift */,
 				0BC825FE22946D060092A7FB /* ListViewController.swift */,
 				0BC82600229471E30092A7FB /* Home */,
+				0BB6B60F22970F230038BDB1 /* DogDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -191,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC8260722947F7C0092A7FB /* DogCell.swift */,
+				0BB6B60D22970DE30038BDB1 /* DogPopup.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +402,7 @@
 				0BC8260822947F7C0092A7FB /* DogCell.swift in Sources */,
 				0BC825FB22946C710092A7FB /* UIFont+additions.swift in Sources */,
 				0BC825F0229465630092A7FB /* ViewController.swift in Sources */,
+				0BB6B60E22970DE30038BDB1 /* DogPopup.swift in Sources */,
 				0BC82605229472390092A7FB /* Dog.swift in Sources */,
 				0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */,
 				0BC825F922946BB80092A7FB /* UILabel+font.swift in Sources */,
@@ -392,11 +410,13 @@
 				0BC825FD22946CB40092A7FB /* TableView.swift in Sources */,
 				0B7762042295E6B500088725 /* HomePresenter.swift in Sources */,
 				0BC825F2229465880092A7FB /* ControllerView.swift in Sources */,
+				0BB6B61322970F950038BDB1 /* DogDetailView.swift in Sources */,
 				0BC825F7229469E00092A7FB /* UIColor+theme.swift in Sources */,
 				0B7762072295E80C00088725 /* DogProvider.swift in Sources */,
 				0BC82602229471F50092A7FB /* HomeViewController.swift in Sources */,
 				0BC825F5229469920092A7FB /* UIViewController+setupNavBar.swift in Sources */,
 				0BC825FF22946D060092A7FB /* ListViewController.swift in Sources */,
+				0BB6B61122970F440038BDB1 /* DogDetailViewController.swift in Sources */,
 				0BC825D4229464850092A7FB /* Rover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,7 +575,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +596,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Rover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

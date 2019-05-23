@@ -12,6 +12,7 @@ target 'Rover' do
   pod 'RxOptional'
   pod 'IQKeyboardManagerSwift'
   pod 'CoreStore'
+  pod 'MaterialComponents/Cards'
 
   target 'RoverTests' do
     inherit! :search_paths
