@@ -10,17 +10,17 @@ import Foundation
 import RxSwift
 
 protocol DogProvider {
-    func fetchDogs() -> Observable<[Dog]>
+    func fetchDogs() -> Observable<[DogViewModel]>
 }
 
 class DogServices: DogProvider {
     
-    func fetchDogs() -> Observable<[Dog]> {
+    func fetchDogs() -> Observable<[DogViewModel]> {
         return Observable.create { observable -> Disposable in
             
-            observable.onNext([Dog(name: "Pug", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "pug")),
-                               Dog(name: "Bravo", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "dog")),
-                               Dog(name: "Pupperino", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "puppy")),])
+            observable.onNext([DogViewModel(name: "Pug", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "pug")),
+                               DogViewModel(name: "Bravo", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "dog")),
+                               DogViewModel(name: "Pupperino", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "puppy")),])
         
             return Disposables.create()
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5A45CC2295FABE00432AED /* HomeViewController+saveContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */; };
 		0B7762042295E6B500088725 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762032295E6B500088725 /* HomePresenter.swift */; };
 		0B7762072295E80C00088725 /* DogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762062295E80C00088725 /* DogProvider.swift */; };
 		0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825CB229464850092A7FB /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+saveContext.swift"; sourceTree = "<group>"; };
 		0B7762032295E6B500088725 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		0B7762062295E80C00088725 /* DogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProvider.swift; sourceTree = "<group>"; };
 		0BC825C8229464850092A7FB /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC82601229471F50092A7FB /* HomeViewController.swift */,
+				0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */,
 				0B7762032295E6B500088725 /* HomePresenter.swift */,
 			);
 			path = Home;
@@ -385,6 +388,7 @@
 				0BC82605229472390092A7FB /* Dog.swift in Sources */,
 				0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */,
 				0BC825F922946BB80092A7FB /* UILabel+font.swift in Sources */,
+				0B5A45CC2295FABE00432AED /* HomeViewController+saveContext.swift in Sources */,
 				0BC825FD22946CB40092A7FB /* TableView.swift in Sources */,
 				0B7762042295E6B500088725 /* HomePresenter.swift in Sources */,
 				0BC825F2229465880092A7FB /* ControllerView.swift in Sources */,

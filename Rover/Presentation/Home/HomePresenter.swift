@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 protocol HomePresenter {
-    func fetchDogs() -> Observable<[Dog]>
+    func fetchDogs() -> Observable<[DogViewModel]>
 }
 
 class HomePresenterImpl: HomePresenter {
@@ -21,7 +21,7 @@ class HomePresenterImpl: HomePresenter {
         self.provider = provider
     }
     
-    func fetchDogs() -> Observable<[Dog]> {
+    func fetchDogs() -> Observable<[DogViewModel]> {
         return provider.fetchDogs()
     }
 }

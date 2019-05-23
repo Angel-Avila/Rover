@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let home = HomeViewController()
+        let provider = DogServices()
+        let presenter = HomePresenterImpl(withProvider: provider)
+        let home = HomeViewController(withPresenter: presenter)
         let root = UINavigationController(rootViewController: home)
         
         window?.rootViewController = root

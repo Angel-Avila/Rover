@@ -8,11 +8,11 @@
 
 import UIKit
 
-class DogCell: GenericTableViewCell<Dog> {
+class DogCell: GenericTableViewCell<DogViewModel> {
     
-    var preferredHeight: CGFloat = 116
+    static var preferredHeight: CGFloat = 116
     
-    override var item: Dog? {
+    override var item: DogViewModel? {
         didSet {
             guard let dog = item else { return }
             nameLabel.text = dog.name
