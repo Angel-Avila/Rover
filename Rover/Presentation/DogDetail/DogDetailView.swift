@@ -29,7 +29,7 @@ class DogDetailView: ControllerView {
         addSubview(popupView)
         
         popupView.pin.width(80%)
-            .height(50%)
+            .height(57%)
             .center()
         
         popupView.setupUI()
