@@ -26,7 +26,7 @@ extension HomeViewController {
         cachedDogs.forEach { print("Cached", $0.name) }
     }
     
-    private func saveDog(_ dog: DogViewModel, cachedDogs: [DogViewModel] = [DogViewModel]()) {
+    func saveDog(_ dog: DogViewModel, cachedDogs: [DogViewModel] = [DogViewModel]()) {
         
         let dogIsFromCache = cachedDogs.filter { $0 == dog }.first != nil
 
@@ -49,7 +49,13 @@ extension HomeViewController {
             
             print("Saving:", created.name.value)
             
-        }, completion: { _ in })
+        }, completion: { _ in
+            if cachedDogs.count == 0 {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        })
     }
     
     func deleteAll() {

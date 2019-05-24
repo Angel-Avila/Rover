@@ -13,6 +13,8 @@
 		0BB6B60E22970DE30038BDB1 /* DogPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B60D22970DE30038BDB1 /* DogPopup.swift */; };
 		0BB6B61122970F440038BDB1 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B61022970F440038BDB1 /* DogDetailViewController.swift */; };
 		0BB6B61322970F950038BDB1 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B61222970F950038BDB1 /* DogDetailView.swift */; };
+		0BB6B616229732E80038BDB1 /* AddDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B615229732E80038BDB1 /* AddDogViewController.swift */; };
+		0BB6B618229732F40038BDB1 /* AddDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B617229732F40038BDB1 /* AddDogView.swift */; };
 		0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825CB229464850092A7FB /* AppDelegate.swift */; };
 		0BC825D4229464850092A7FB /* Rover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825D2229464850092A7FB /* Rover.xcdatamodeld */; };
 		0BC825D6229464870092A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC825D5229464870092A7FB /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		0BB6B60D22970DE30038BDB1 /* DogPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPopup.swift; sourceTree = "<group>"; };
 		0BB6B61022970F440038BDB1 /* DogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewController.swift; sourceTree = "<group>"; };
 		0BB6B61222970F950038BDB1 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
+		0BB6B615229732E80038BDB1 /* AddDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewController.swift; sourceTree = "<group>"; };
+		0BB6B617229732F40038BDB1 /* AddDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogView.swift; sourceTree = "<group>"; };
 		0BC825C8229464850092A7FB /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC825CB229464850092A7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC825D3229464850092A7FB /* Rover.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rover.xcdatamodel; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 			path = DogDetail;
 			sourceTree = "<group>";
 		};
+		0BB6B614229717B20038BDB1 /* AddDog */ = {
+			isa = PBXGroup;
+			children = (
+				0BB6B617229732F40038BDB1 /* AddDogView.swift */,
+				0BB6B615229732E80038BDB1 /* AddDogViewController.swift */,
+			);
+			path = AddDog;
+			sourceTree = "<group>";
+		};
 		0BC825BF229464850092A7FB = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,7 @@
 				0BC825FE22946D060092A7FB /* ListViewController.swift */,
 				0BC82600229471E30092A7FB /* Home */,
 				0BB6B60F22970F230038BDB1 /* DogDetail */,
+				0BB6B614229717B20038BDB1 /* AddDog */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -402,6 +416,7 @@
 				0BC8260822947F7C0092A7FB /* DogCell.swift in Sources */,
 				0BC825FB22946C710092A7FB /* UIFont+additions.swift in Sources */,
 				0BC825F0229465630092A7FB /* ViewController.swift in Sources */,
+				0BB6B616229732E80038BDB1 /* AddDogViewController.swift in Sources */,
 				0BB6B60E22970DE30038BDB1 /* DogPopup.swift in Sources */,
 				0BC82605229472390092A7FB /* Dog.swift in Sources */,
 				0BC825CC229464850092A7FB /* AppDelegate.swift in Sources */,
@@ -417,6 +432,7 @@
 				0BC825F5229469920092A7FB /* UIViewController+setupNavBar.swift in Sources */,
 				0BC825FF22946D060092A7FB /* ListViewController.swift in Sources */,
 				0BB6B61122970F440038BDB1 /* DogDetailViewController.swift in Sources */,
+				0BB6B618229732F40038BDB1 /* AddDogView.swift in Sources */,
 				0BC825D4229464850092A7FB /* Rover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,8 +19,8 @@ class DogServices: DogProvider {
         return Observable.create { observable -> Disposable in
             
             observable.onNext([DogViewModel(name: "Pug", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "pug")),
-                               DogViewModel(name: "Bravo", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "dog")),
-                               DogViewModel(name: "Pupperino", owner: "Juan", bio: "This dog is an amazing dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "puppy")),])
+                               DogViewModel(name: "Bravo", owner: "Juan", bio: "He's a very brave dog. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "dog")),
+                               DogViewModel(name: "Pupperino", owner: "Juan", bio: "He's a really small puppy. I really do love him a lot since he's my best friend. I really like going on walks with him", image: #imageLiteral(resourceName: "puppy"))])
         
             return Disposables.create()
         }

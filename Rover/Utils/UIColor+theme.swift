@@ -32,6 +32,7 @@ extension UIColor {
 
 extension UIColor {
     static var roverGreen = UIColor(hex: "77C045")
+    static var roverDarkGreen = UIColor(hex: "4E822A")
     static var darkText = UIColor(hex: "555555")
     static var lightText = UIColor(hex: "989898")
     static var placeholderText = UIColor(hex: "777777")

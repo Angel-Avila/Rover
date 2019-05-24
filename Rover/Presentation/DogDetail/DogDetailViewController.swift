@@ -21,8 +21,7 @@ class DogDetailViewController: ViewController<DogDetailView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        modalPresentationStyle = .overCurrentContext
+
         view.backgroundColor = UIColor(white: 0, alpha: 0.3)
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(dismissVC))

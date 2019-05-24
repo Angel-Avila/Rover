@@ -76,12 +76,35 @@ class HomeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "My Dogs"
+        setupAddDogButton()
         
         tableView.register(DogCell.self, forCellReuseIdentifier: cellId)
         tableView.backgroundColor = .white
         view.backgroundColor = .white
         
         tableView.pin.all(view.pin.safeArea)
+    }
+    
+    fileprivate func setupAddDogButton() {
+        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc func addButtonTapped() {
+        let responder = AddDogViewController()
+        navigationController?.pushViewController(responder, animated: true)
+        
+        _ = responder.getResponse().subscribe(onNext: { targetObservable in
+            
+            switch targetObservable {
+            case .dog(let dog):
+                self.saveDog(dog)
+            default:
+                break
+            }
+            
+            print(targetObservable)
+        })
     }
     
     // MARK: TableViewDataSource

@@ -38,10 +38,8 @@ extension UIViewController {
     }
     
     func pinControllerViewToTopBar(_ controllerView: UIView) {
-        let topBarHeight = self.topBarHeight()
-        
         view.addSubview(controllerView)
-        controllerView.pin.top(view.pin.safeArea + topBarHeight)
+        controllerView.pin.top(view.pin.safeArea)
             .bottom()
             .horizontally()
     }

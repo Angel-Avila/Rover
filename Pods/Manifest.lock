@@ -11,6 +11,8 @@ PODS:
     - MaterialComponents/Shapes
   - MaterialComponents/Ink (84.0.0):
     - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (84.0.0)
+  - MaterialComponents/private/Application (84.0.0)
   - MaterialComponents/private/Icons/Base (84.0.0)
   - MaterialComponents/private/Icons/ic_check_circle (84.0.0):
     - MaterialComponents/private/Icons/Base
@@ -24,6 +26,16 @@ PODS:
   - MaterialComponents/Shapes (84.0.0):
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (84.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (84.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
   - PinLayout (1.8.7)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -39,6 +51,7 @@ DEPENDENCIES:
   - CoreStore
   - IQKeyboardManagerSwift
   - MaterialComponents/Cards
+  - MaterialComponents/TextFields
   - PinLayout
   - RxCocoa
   - RxOptional
@@ -49,6 +62,7 @@ SPEC REPOS:
     - CoreStore
     - IQKeyboardManagerSwift
     - MaterialComponents
+    - MDFInternationalization
     - PinLayout
     - RxCocoa
     - RxOptional
@@ -59,12 +73,13 @@ SPEC CHECKSUMS:
   CoreStore: 1ce7b77a95f0939d90b2d1e04e66a4a5bc1614d7
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
   MaterialComponents: ea6e7d777ca716eed90e44700be40a91f4c9c4d5
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   PinLayout: a0722a5c8f0e0168a9c091ffe4930dabf0c8582c
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 12acc16f3b835911f9c1b4e6e43c3749330dc083
+PODFILE CHECKSUM: 290fa976a5d851cab564079f9c63312792b4bd6a
 
 COCOAPODS: 1.7.0.beta.2
