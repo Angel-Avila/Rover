@@ -14,7 +14,7 @@ protocol DogProvider {
 }
 
 class DogServices: DogProvider {
-    
+        
     func fetchDogs() -> Observable<[DogViewModel]> {
         return Observable.create { observable -> Disposable in
             

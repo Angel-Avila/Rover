@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B5A45CC2295FABE00432AED /* HomeViewController+saveContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */; };
+		0B6520C022989C7C00D9E547 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6520BF22989C7C00D9E547 /* HomePresenterTests.swift */; };
 		0B7762042295E6B500088725 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762032295E6B500088725 /* HomePresenter.swift */; };
 		0B7762072295E80C00088725 /* DogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7762062295E80C00088725 /* DogProvider.swift */; };
 		0BB6B60E22970DE30038BDB1 /* DogPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB6B60D22970DE30038BDB1 /* DogPopup.swift */; };
@@ -19,7 +20,6 @@
 		0BC825D4229464850092A7FB /* Rover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825D2229464850092A7FB /* Rover.xcdatamodeld */; };
 		0BC825D6229464870092A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC825D5229464870092A7FB /* Assets.xcassets */; };
 		0BC825D9229464870092A7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC825D7229464870092A7FB /* LaunchScreen.storyboard */; };
-		0BC825E4229464870092A7FB /* RoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825E3229464870092A7FB /* RoverTests.swift */; };
 		0BC825F0229465630092A7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825EF229465630092A7FB /* ViewController.swift */; };
 		0BC825F2229465880092A7FB /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825F1229465880092A7FB /* ControllerView.swift */; };
 		0BC825F5229469920092A7FB /* UIViewController+setupNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC825F4229469920092A7FB /* UIViewController+setupNavBar.swift */; };
@@ -31,8 +31,10 @@
 		0BC82602229471F50092A7FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC82601229471F50092A7FB /* HomeViewController.swift */; };
 		0BC82605229472390092A7FB /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC82604229472390092A7FB /* Dog.swift */; };
 		0BC8260822947F7C0092A7FB /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC8260722947F7C0092A7FB /* DogCell.swift */; };
-		16A2FFAE0E61101ECC2887B8 /* Pods_Rover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1028B1AB858F427EA66806 /* Pods_Rover.framework */; };
-		6C2ECEF3C40A25B6866FF599 /* Pods_RoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4777B36BE22CCAF15A3E95A2 /* Pods_RoverTests.framework */; };
+		0BEBB9322298A0A300AE9D06 /* DogProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBB9312298A0A300AE9D06 /* DogProviderTests.swift */; };
+		0BFDBB822298A949007A4F6A /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFDBB812298A949007A4F6A /* HomeViewControllerTests.swift */; };
+		1B67FD396BF3AB7835C6C94B /* Pods_RoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1012C953A58FE37D48DC9E2 /* Pods_RoverTests.framework */; };
+		6FF24B70608A1F01CD38B331 /* Pods_Rover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566067BB1B680FE9EB524FFE /* Pods_Rover.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0B5A45CB2295FABE00432AED /* HomeViewController+saveContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+saveContext.swift"; sourceTree = "<group>"; };
+		0B6520BF22989C7C00D9E547 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		0B7762032295E6B500088725 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		0B7762062295E80C00088725 /* DogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProvider.swift; sourceTree = "<group>"; };
 		0BB6B60D22970DE30038BDB1 /* DogPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPopup.swift; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		0BC825D8229464870092A7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC825DA229464870092A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC825DF229464870092A7FB /* RoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BC825E3229464870092A7FB /* RoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTests.swift; sourceTree = "<group>"; };
 		0BC825E5229464870092A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC825EF229465630092A7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BC825F1229465880092A7FB /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
@@ -74,12 +76,14 @@
 		0BC82601229471F50092A7FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0BC82604229472390092A7FB /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		0BC8260722947F7C0092A7FB /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
-		0DA1CE31422023AD8DC3E1CB /* Pods-Rover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.release.xcconfig"; path = "Target Support Files/Pods-Rover/Pods-Rover.release.xcconfig"; sourceTree = "<group>"; };
-		4777B36BE22CCAF15A3E95A2 /* Pods_RoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		987CCCC42CB9AE453794311E /* Pods-Rover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.debug.xcconfig"; path = "Target Support Files/Pods-Rover/Pods-Rover.debug.xcconfig"; sourceTree = "<group>"; };
-		B9F90C3C5AAF0BAD20609C31 /* Pods-RoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.release.xcconfig"; path = "Target Support Files/Pods-RoverTests/Pods-RoverTests.release.xcconfig"; sourceTree = "<group>"; };
-		ECF9D1B8790FE883C9337F32 /* Pods-RoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.debug.xcconfig"; path = "Target Support Files/Pods-RoverTests/Pods-RoverTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED1028B1AB858F427EA66806 /* Pods_Rover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BEBB9312298A0A300AE9D06 /* DogProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProviderTests.swift; sourceTree = "<group>"; };
+		0BFDBB812298A949007A4F6A /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		14E027B45B0C8219E0C474F8 /* Pods-Rover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.debug.xcconfig"; path = "Target Support Files/Pods-Rover/Pods-Rover.debug.xcconfig"; sourceTree = "<group>"; };
+		48324E6E6514B89140942C96 /* Pods-RoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.debug.xcconfig"; path = "Target Support Files/Pods-RoverTests/Pods-RoverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BDDB2B1BDEE6FD4611CC9CB /* Pods-RoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoverTests.release.xcconfig"; path = "Target Support Files/Pods-RoverTests/Pods-RoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		566067BB1B680FE9EB524FFE /* Pods_Rover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD85F82A1C9C0C1280C93BC /* Pods-Rover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rover.release.xcconfig"; path = "Target Support Files/Pods-Rover/Pods-Rover.release.xcconfig"; sourceTree = "<group>"; };
+		C1012C953A58FE37D48DC9E2 /* Pods_RoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A2FFAE0E61101ECC2887B8 /* Pods_Rover.framework in Frameworks */,
+				6FF24B70608A1F01CD38B331 /* Pods_Rover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2ECEF3C40A25B6866FF599 /* Pods_RoverTests.framework in Frameworks */,
+				1B67FD396BF3AB7835C6C94B /* Pods_RoverTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +139,7 @@
 				0BC825E2229464870092A7FB /* RoverTests */,
 				0BC825C9229464850092A7FB /* Products */,
 				311173F51DDCFF60351FC942 /* Pods */,
-				47B9A8C105BD9404797D2398 /* Frameworks */,
+				B42235C5A91923C8A878F8C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +172,9 @@
 		0BC825E2229464870092A7FB /* RoverTests */ = {
 			isa = PBXGroup;
 			children = (
-				0BC825E3229464870092A7FB /* RoverTests.swift */,
+				0BEBB9312298A0A300AE9D06 /* DogProviderTests.swift */,
+				0B6520BF22989C7C00D9E547 /* HomePresenterTests.swift */,
+				0BFDBB812298A949007A4F6A /* HomeViewControllerTests.swift */,
 				0BC825E5229464870092A7FB /* Info.plist */,
 			);
 			path = RoverTests;
@@ -229,19 +235,19 @@
 		311173F51DDCFF60351FC942 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				987CCCC42CB9AE453794311E /* Pods-Rover.debug.xcconfig */,
-				0DA1CE31422023AD8DC3E1CB /* Pods-Rover.release.xcconfig */,
-				ECF9D1B8790FE883C9337F32 /* Pods-RoverTests.debug.xcconfig */,
-				B9F90C3C5AAF0BAD20609C31 /* Pods-RoverTests.release.xcconfig */,
+				14E027B45B0C8219E0C474F8 /* Pods-Rover.debug.xcconfig */,
+				8DD85F82A1C9C0C1280C93BC /* Pods-Rover.release.xcconfig */,
+				48324E6E6514B89140942C96 /* Pods-RoverTests.debug.xcconfig */,
+				4BDDB2B1BDEE6FD4611CC9CB /* Pods-RoverTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		47B9A8C105BD9404797D2398 /* Frameworks */ = {
+		B42235C5A91923C8A878F8C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED1028B1AB858F427EA66806 /* Pods_Rover.framework */,
-				4777B36BE22CCAF15A3E95A2 /* Pods_RoverTests.framework */,
+				566067BB1B680FE9EB524FFE /* Pods_Rover.framework */,
+				C1012C953A58FE37D48DC9E2 /* Pods_RoverTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,11 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BC825E8229464870092A7FB /* Build configuration list for PBXNativeTarget "Rover" */;
 			buildPhases = (
-				387223A1D6716125815432AC /* [CP] Check Pods Manifest.lock */,
+				9A2703FA9B8C56C25A231FE2 /* [CP] Check Pods Manifest.lock */,
 				0BC825C4229464850092A7FB /* Sources */,
 				0BC825C5229464850092A7FB /* Frameworks */,
 				0BC825C6229464850092A7FB /* Resources */,
-				9E2321BA59258601869DF0C3 /* [CP] Embed Pods Frameworks */,
+				EAEBB5C2F59FF853D42661ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,10 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BC825EB229464870092A7FB /* Build configuration list for PBXNativeTarget "RoverTests" */;
 			buildPhases = (
-				23EFF5070FA6C0A373A8C263 /* [CP] Check Pods Manifest.lock */,
+				B29099F38174D736FC0D4C7D /* [CP] Check Pods Manifest.lock */,
 				0BC825DB229464870092A7FB /* Sources */,
 				0BC825DC229464870092A7FB /* Frameworks */,
 				0BC825DD229464870092A7FB /* Resources */,
+				19AF4A3820A197FE036DA421 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,29 +352,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23EFF5070FA6C0A373A8C263 /* [CP] Check Pods Manifest.lock */ = {
+		19AF4A3820A197FE036DA421 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoverTests/Pods-RoverTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RoverTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-RoverTests/Pods-RoverTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoverTests/Pods-RoverTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		387223A1D6716125815432AC /* [CP] Check Pods Manifest.lock */ = {
+		9A2703FA9B8C56C25A231FE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,7 +391,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E2321BA59258601869DF0C3 /* [CP] Embed Pods Frameworks */ = {
+		B29099F38174D736FC0D4C7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEBB5C2F59FF853D42661ED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,7 +465,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC825E4229464870092A7FB /* RoverTests.swift in Sources */,
+				0B6520C022989C7C00D9E547 /* HomePresenterTests.swift in Sources */,
+				0BFDBB822298A949007A4F6A /* HomeViewControllerTests.swift in Sources */,
+				0BEBB9322298A0A300AE9D06 /* DogProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +611,7 @@
 		};
 		0BC825E9229464870092A7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 987CCCC42CB9AE453794311E /* Pods-Rover.debug.xcconfig */;
+			baseConfigurationReference = 14E027B45B0C8219E0C474F8 /* Pods-Rover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -606,7 +632,7 @@
 		};
 		0BC825EA229464870092A7FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DA1CE31422023AD8DC3E1CB /* Pods-Rover.release.xcconfig */;
+			baseConfigurationReference = 8DD85F82A1C9C0C1280C93BC /* Pods-Rover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -627,13 +653,14 @@
 		};
 		0BC825EC229464870092A7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF9D1B8790FE883C9337F32 /* Pods-RoverTests.debug.xcconfig */;
+			baseConfigurationReference = 48324E6E6514B89140942C96 /* Pods-RoverTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX5B7972N5;
 				INFOPLIST_FILE = RoverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,13 +676,14 @@
 		};
 		0BC825ED229464870092A7FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9F90C3C5AAF0BAD20609C31 /* Pods-RoverTests.release.xcconfig */;
+			baseConfigurationReference = 4BDDB2B1BDEE6FD4611CC9CB /* Pods-RoverTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PX5B7972N5;
 				INFOPLIST_FILE = RoverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
